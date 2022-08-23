@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="409dp"
+        android:layout_height="729dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="80dp"
+        android:baselineAligned="false"
+        android:clickable="false"
+        android:orientation="vertical"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/tv_1"
+            android:layout_width="304dp"
+            android:layout_height="wrap_content"
+            android:baselineAligned="false"
+            android:text="登入系统"
+            android:textSize="45sp" />
+
+        <TextView
+            android:id="@+id/tv_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="账号 :"
+            android:textSize="30sp" />
+
+        <EditText
+            android:id="@+id/edt_id"
+            android:layout_width="303dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="请输入账号:"
+            android:inputType="textPersonName"
+            android:minHeight="48dp"
+            android:singleLine="false" />
+
+        <TextView
+            android:id="@+id/tv_pw"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="密码 :"
+            android:textSize="30sp" />
+
+        <EditText
+            android:id="@+id/edt_pw"
+            android:layout_width="303dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPassword"
+            android:minHeight="48dp"
+            android:singleLine="false" />
+
+        <Button
+            android:id="@+id/btn1"
+            android:layout_width="299dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="#479DE1"
+            android:backgroundTint="#3F51B5"
+            android:text="登入"
+            android:textAlignment="center"
+            android:textSize="20sp"
+            android:textStyle="bold"  />
+
+        <Button
+            android:id="@+id/btn2"
+            android:layout_width="299dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="#FF0000"
+            android:text="关闭"
+            android:textColorHint="#FDFDFD"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>
